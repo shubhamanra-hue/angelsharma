@@ -93,7 +93,7 @@
         }
         .cta a:hover { transform: scale(1.1); box-shadow: 0 0 50px #ff69b4; }
 
-        /* Floating Buttons */
+        /* Floating Buttons - White Background */
         .float-btn {
             position: fixed;
             bottom: 30px;
@@ -101,8 +101,8 @@
             width: 70px;
             height: 70px;
             border-radius: 50%;
-            background: #25D366;
-            box-shadow: 0 0 20px rgba(37,213,102,0.8);
+            background: #ffffff;                  /* White color */
+            box-shadow: 0 0 25px rgba(255,105,180,0.7), 0 0 15px rgba(0,191,255,0.5);
             display: flex;
             align-items: center;
             justify-content: center;
@@ -111,10 +111,13 @@
         }
         .float-btn.call {
             bottom: 120px;
-            background: #00bfff;
-            box-shadow: 0 0 20px rgba(0,191,255,0.8);
+            background: #ffffff;                  /* White color for call too */
+            box-shadow: 0 0 25px rgba(255,105,180,0.7), 0 0 15px rgba(0,191,255,0.5);
         }
-        .float-btn:hover { transform: scale(1.15); }
+        .float-btn:hover { 
+            transform: scale(1.15); 
+            box-shadow: 0 0 40px rgba(255,20,147,0.9);
+        }
         .float-btn img { width: 40px; height: 40px; }
     </style>
 </head>
@@ -172,7 +175,7 @@
 
     </div>
 
-    <!-- Floating Buttons -->
+    <!-- Floating Buttons (White) -->
     <a href="https://api.whatsapp.com/send/?phone=%2B918586868984&text=Hello%21+I+am+interested+in+your+services.&type=phone_number&app_absent=0" class="float-btn" target="_blank">
         <img src="whatsapp-whats-app-svgrepo-com.svg" alt="WhatsApp">
     </a>
